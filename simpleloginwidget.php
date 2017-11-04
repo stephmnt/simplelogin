@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Simpliest login Widget
+Plugin Name: Simple login Widget
 Plugin URI: https://github.com/stephanemanet/simplelogin
 Description: A very simple widget to login or register. Usefull for integrators.
 Version: 0.1
@@ -22,8 +22,8 @@ class Simpliest_login_Widget extends WP_Widget
 		?>
 		<div class="simplelogin">
 			<ul>
-			<li><?php wp_loginout(); ?></li>
-			<li><?php wp_register(); ?></li>
+				<li><?php wp_loginout(); ?></li>
+				<li><?php /* wp_register(); */ ?></li>
 			</ul>
 		</div>
 		<?php
@@ -31,5 +31,4 @@ class Simpliest_login_Widget extends WP_Widget
 }
 
 add_action('widgets_init', function(){register_widget('Simpliest_login_Widget');});
-
 ?>
